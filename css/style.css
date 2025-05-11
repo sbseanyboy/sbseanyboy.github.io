@@ -58,4 +58,20 @@
   .nav .active {
     background-color: #0085b1;
   }
+
+  .download-btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.6em 1.2em;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .download-btn:hover {
+    background-color: #0056b3;
+  }
+  
   
