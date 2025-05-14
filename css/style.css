@@ -37,7 +37,7 @@
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    border-bottom: 7px solid #0085b1; /* or #0000FF */
+    border-bottom: 7px solid #b10085; /* or #0000FF */
   }
   
   .nav li {
@@ -57,7 +57,7 @@
   }
   
   .nav .active {
-    background-color: #0085b1;
+    background-color: #b10085;
   }
 
   .download-btn {
@@ -81,7 +81,7 @@
   height: 100vh;
   overflow: hidden;
   background-color: black;
-  border-bottom: 7px solid #0085b1; /* or #0000FF */
+  border-bottom: 7px solid #b10085; /* or #0000FF */
   /* Black background color */
 }
 
@@ -110,8 +110,35 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  background: rgba(62, 68, 103, 0.3);
+  backdrop-filter: blur(6px);
+  padding: 2em;
+  border-radius: 8px;
+  width: 50%;
+  max-width: 600px;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0085b1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.over-image-top h1,
+.over-image-top p {
+  border-bottom: none;
+  padding-bottom: 0; /* optional: removes spacing left by the original rule */
 }
   
   
