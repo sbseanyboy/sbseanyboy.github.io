@@ -48,7 +48,7 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
   }
   
@@ -58,6 +58,16 @@
   
   .nav .active {
     background-color: #b10085;
+  }
+
+  .nav-icon {
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+  }
+
+  .nav li a.icon {
+    padding: 9px 20px;
   }
 
   .download-btn {
@@ -140,5 +150,4 @@
   border-bottom: none;
   padding-bottom: 0; /* optional: removes spacing left by the original rule */
 }
-  
   
