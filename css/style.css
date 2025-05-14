@@ -11,8 +11,8 @@
     line-height: 1.6;
   }
   
-  main {
-    max-width: 700px;
+  .text {
+    max-width: 900px;
     margin: auto;
   }
   
@@ -74,5 +74,44 @@
   .download-btn:hover {
     background-color: #0056b3;
   }
+
+.main-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  border-bottom: 7px solid #0085b1; /* or #0000FF */
+  /* Black background color */
+}
+
+/* Background container with fading effect */
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom center;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 1;
+}
+/* Add a fading effect when changing images */
+
+.bg.fade-out {
+  opacity: 0;  /* Fade out effect (opacity goes to 0) */
+}
+
+.bg.fade-in {
+  opacity: 1;  /* Fade in effect (opacity goes back to 1) */
+}
+.over-image-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
   
   
