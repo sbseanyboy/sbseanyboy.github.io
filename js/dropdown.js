@@ -1,25 +1,28 @@
-const buttons = document.querySelectorAll('.experience-icons .icon-button');
-const dropdown = document.getElementById('experience-dropdown');
+const buttons = document.querySelectorAll('.icon-button');
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    const company = button.getAttribute('company');
-    const title = button.getAttribute('title');
+    const info = button.getAttribute('title');
+    const title = button.querySelector('h2')?.textContent ?? '';
 
-    // Check if same content is showing
-    if (
-      dropdown.style.display === 'block' &&
-      dropdown.querySelector('h2')?.textContent === company &&
-      dropdown.querySelector('h3')?.textContent === title
-    ) {
-      // Hide dropdown if same content is clicked
+    // Find the closest section and its dropdown
+    const section = button.closest('.section');
+    const dropdown = section.querySelector('.dropdown-wide');
+
+    // Check if this content is already shown
+    const isVisible = dropdown.style.display === 'block';
+    const currentTitle = dropdown.querySelector('h2')?.textContent;
+    const currentInfo = dropdown.querySelector('h3')?.textContent;
+
+    if (isVisible && currentTitle === title && currentInfo === info) {
+      // Hide dropdown if clicked again
       dropdown.style.display = 'none';
       dropdown.innerHTML = '';
     } else {
-      // Show new content with title and info
+      // Show new content
       dropdown.innerHTML = `
-        <h2>${company}</h2>
-        <h3>${title}</h3>
+        <h2>${title}</h2>
+        <h3>${info}</h3>
       `;
       dropdown.style.display = 'block';
     }

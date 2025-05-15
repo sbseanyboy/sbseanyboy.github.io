@@ -221,7 +221,8 @@
   display: none; /* hidden initially */
 }
 
-#experience-dropdown h2 {
+#experience-dropdown h2, 
+#education-dropdown h2 {
   margin-top: 0;
   font-size: 1.5rem;
   color: #0085b1;
