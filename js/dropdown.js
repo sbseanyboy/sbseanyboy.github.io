@@ -5,26 +5,22 @@ buttons.forEach(button => {
     const info = button.getAttribute('title');
     const title = button.querySelector('h2')?.textContent ?? '';
 
-    // Find the closest section and its dropdown
     const section = button.closest('.section');
     const dropdown = section.querySelector('.dropdown-wide');
 
-    // Check if this content is already shown
-    const isVisible = dropdown.style.display === 'block';
+    const isVisible = dropdown.classList.contains('show');
     const currentTitle = dropdown.querySelector('h2')?.textContent;
     const currentInfo = dropdown.querySelector('h3')?.textContent;
 
     if (isVisible && currentTitle === title && currentInfo === info) {
-      // Hide dropdown if clicked again
-      dropdown.style.display = 'none';
-      dropdown.innerHTML = '';
+      dropdown.classList.remove('show');
+      setTimeout(() => dropdown.innerHTML = '', 400); // Wait for animation before clearing
     } else {
-      // Show new content
       dropdown.innerHTML = `
         <h2>${title}</h2>
         <h3>${info}</h3>
       `;
-      dropdown.style.display = 'block';
+      dropdown.classList.add('show');
     }
   });
 });
