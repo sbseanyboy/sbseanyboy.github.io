@@ -1,11 +1,47 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=home.html" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    If you are not redirected, <a href="html/home.html">click here</a>.
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+
+    .splash-content {
+      opacity: 1;
+      transition: opacity 1s ease-out;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="splash-content" id="splash">🚀 Welcome to My Site</div>
+
+  <script>
+    // Optional fade-out before redirect
+    setTimeout(() => {
+      document.getElementById("splash").classList.add("fade-out");
+    }, 1500); // fade after 1.5s
+
+    // Redirect after 2 seconds
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 2000);
+  </script>
+</body>
 </html>
