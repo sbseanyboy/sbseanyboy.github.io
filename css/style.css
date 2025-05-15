@@ -79,6 +79,7 @@
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* heavy shadow */
   }
   
   .download-btn:hover {
