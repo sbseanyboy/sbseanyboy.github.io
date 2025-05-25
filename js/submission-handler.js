@@ -11,7 +11,7 @@ document.getElementById('submission-form').addEventListener('submit', async (e) 
     const name = e.target.name.value.trim();
     const message = e.target.message.value.trim();
 
-    const wordCount = messageInput.split(/\s+/).length;
+    const wordCount = message.split(/\s+/).length;
     if (wordCount > 200) {
       alert('Message must be 200 words or fewer.');
       return;
