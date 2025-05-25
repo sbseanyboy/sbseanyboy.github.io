@@ -33,7 +33,7 @@ const dropdownData = {
     subtitle2: "Software Engineer I — Supply Chain and Retail Tech (July 2023–Present)",
     content2: `
       <ul>
-        <li>Led the department-wide adoption of Postgres by enhancing infrastructure for easy terraform provisioningm and extending a core data access library to support Postgres and supporting functionality</li>
+        <li>Led the department-wide adoption of Postgres by enhancing infrastructure for easy terraform provisioning and extending a core data access library to support Postgres and supporting functionality</li>
         <li>Reduced latencies of a key storefront API by 7-8% by enhancing kafka data propagation, enabling the obsoletion and removal of redundant SQL queries and surrounding code</li>
         <li>Optimized Kafka consumer applications processing 500k+ messages per second, improving data integrity, eliminating bottlenecks, and enhancing concurrency to ensure real-time processing at scale</li>
         <li>Fixed several bugs correcting the legal compliance and preventing sale of 63M+ products and 300+ suppliers</li>
