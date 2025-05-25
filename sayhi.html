@@ -40,9 +40,28 @@
           <section class="section">
             <div class="text">
                 <h1>Say Hi!</h1>
-                <p>New Feature Coming Soon for you all to leave your mark on this site too</p>
+                <p>I wanted to add a way for you all to leave your mark on this site too.
+                  Feel free to drop your name and a message below and hit submit to see your legacy appear in the word cloud before!
+                </p>
+                <p>If you want your message removed, just shoot me an email here!
+                </p>
+                <form id="submission-form">
+                  <input type="text" name="name" placeholder="Your name" required class="name-input" />
+                  <textarea name="message" placeholder="Your message" required class="message-input"></textarea>
+                  <button type="submit" class="submit-btn">Submit</button>
+                </form>     
             </div>
           </section>
+          <section class="section">
+            <div class="text">
+              <canvas id="wordCloud" width="900" height="500"></canvas> 
+              <div id="tooltip"></div> 
+            </div>    
+          </section>
         </main>
-        <script src="/js/background-slider.js"></script>
+        <script defer src="/js/background-slider.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/wordcloud2/src/wordcloud2.js"></script>
+        <script defer type="module" src="/js/submission-handler.js"></script>        
+
 </body>
