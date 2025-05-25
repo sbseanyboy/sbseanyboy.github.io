@@ -230,7 +230,7 @@
 .dropdown-wide.show {
   padding: 1rem 2rem;
   transform: scaleY(1);
-  max-height: 500px; /* Adjust if you expect more content */
+  max-height: 600px; /* Adjust if you expect more content */
 }
 
 #experience-dropdown h2, 
