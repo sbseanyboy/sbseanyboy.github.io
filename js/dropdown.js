@@ -25,7 +25,7 @@ const dropdownData = {
     subtitle: "Software Engineer Co-op — Marketing Tech (July 2022–December 2022)",
     content: `
       <ul>
-        <li>Improved the quality of ads displayed on the storefront with a new Java advertisement ranking algorithms</li>
+        <li>Improved the quality of ads displayed on the storefront with a new Java advertisement ranking algorithm</li>
         <li>Optimized ad footprint and enhanced the shopping experience by implementing logic to scale ad quantities</li>
         <li>Corrected the cost of 650,000+ daily ad clicks by discovering and resolving a bug in an ad pricing algorithm</li>
       </ul>
